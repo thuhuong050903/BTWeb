@@ -4,8 +4,9 @@
     width: 99%;
 }
 #header{
-    background-color: aqua;
+    background-color: rgb(234, 245, 209);
     border: 1px solid black;
+   
 }
 #header-logo{
     display: inline-flex;
@@ -18,23 +19,54 @@
 #header-menu ul {
     display: inline-flex;
     list-style-type: none;
+    margin-bottom: 0;
+    
 }
 .box{
-    background-color: aquamarine;
-    width: 97.7%;
+    background-color: rgb(191, 207, 154);
+    width: 97.85%;
     padding-right: auto;
 }
 .box li{
     margin: 10px; 
     text-align: center; 
-    height: 100px; 
-    width: 100px; 
-    line-height: 100px;
+    height: 50px; 
+    width: 150px; 
+    line-height: 50px;
+    font-size: 20px;
+}
+.h-menu1{
+    display: flex;
+    flex-direction: column;
+}
+#header-menu ul li{
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    border-bottom:1px solid #e8e8e8 ;
+    padding:0 1em ;
+    position: relative;
+}
+#header-menu ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+#header-menu ul li:hover{
+    background-color: antiquewhite;
+}
+#header-menu .h-menu1{
+    display: none;
+}
+#header-menu ul li:hover .h-menu1{
+    display: block;
+    background-color: #CDE2CD;
 }
 #content{
 
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 13.4% 85%;
     border: 1px solid black;
 }
 #content .left-content{
@@ -44,7 +76,7 @@
 
 .main-menu{
     background:gainsboro;
-    width: 200px;
+    width: auto;
     padding: 0;
     text-align: left;
     border-color: #333;
@@ -58,10 +90,10 @@
 }
 .main-menu ul li{
     width: auto;
-    height: 40px;
+    height: auto;
     line-height: 40px;
-    border-bottom:1px solid #e8e8e8 ;
-    padding:0 1em ;
+    border:1px solid #090808 ;
+    padding:0 1em;
     position: relative;
 }
 
@@ -76,18 +108,22 @@
 }
 .sub-menu{
     position: absolute;
-    margin-left: 100px;
+    margin-left: 231px;
 }
-.main-menu .sub-menu{
+.sub-menu{
     display: none;
 }
 .main-menu ul li:hover .sub-menu{
     display: block;
 }
 .sub-menu .sub-menu2{
+    position: absolute;
+    margin-left: 230px;
+}
+.sub-menu .sub-menu2{
     display: none;
 }
-.sub-menu ul li:hover .sub-menu2{
+.sub-menu li:hover ul.sub-menu2{
     display: block;
 }
 #products{
@@ -98,12 +134,27 @@
     font-size: 26px;
     padding: 10px;
 }
+.product{
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+}
 .name-product{
     font-size: 26px;
     text-align: center;
 }
 .picture{
-    width: 500px;
-    height: 400px;
-
+    width: 400px;
+    height: 300px;
+}
+.detail{
+    text-align: center;
+    font-weight: bold;
+}
+.digital {
+   font-weight: bold;
+   color: blue;
+}
+.please-call{
+    color: red;
 }
