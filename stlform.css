@@ -1,0 +1,31 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+table{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+}
+input[type="text"]{
+    border: 1px solid green;
+    font-size: 24px;
+    background-color: greenyellow;
+}
+input[type="submit"]{
+    border: 1px solid black;
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+select{
+    font-size: 24px;
+    background-color: blanchedalmond;
+}
+textarea{
+    background-color: bisque;
+
+}
