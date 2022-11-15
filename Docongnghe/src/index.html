@@ -1,46 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://newproductreviews.sapoapps.vn/assets/css/bpr.min.css?v=1.0" media="all">
+    <link rel="stylesheet" type="text/css" href="https://newproductreviews.sapoapps.vn/assets/css/bpr.min.css?v=1.0"
+        media="all">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/11a9c95312.js" crossorigin="anonymous"></script>
     <title>Thiết bị công nghệ </title>
 </head>
+
 <body>
-    <div class="h-container">
-        <div class="left-wrapper"></div>
-            <div class="wrapper"> 
-                <header>
+    
+        <div class="wrapper">
+            <header>
                 <div class="header-left">
                     <img src="../asset/logo (1).webp" alt="">
-                    <h3>DANH MỤC SẢN PHẨM</h3>
+                    <div class="dropdown" style="background-color:rgb(115, 108, 108) ;">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          DANH MỤC SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Dụng cụ gia công cơ khí</a>
+                                <ul class="dropdow-menu" aria-labelledby="dropdownMenuLink">
+                                    <li> <a href="" class="dropdown-item" >Máy vát mép</a></li>
+                                    <li> <a href="" class="dropdown-item" >Máy khoan từ</a></li>
+                                    <li> <a href="" class="dropdown-item" >Máy chà sàn</a></li>
+                                    <li> <a href="" class="dropdown-item" >Máy khoan búa</a></li>
+                                    <li> <a href="" class="dropdown-item" >Máy vặn vít</a></li>
+                                    <li> <a href="" class="dropdown-item" >Máy mài góc</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Thiết bị phun sơn</a>
+                                <ul class="dropdow-menu" aria-labelledby="dropdownMenuLink">
+                                    <li> <a href="" class="dropdown-item" >Súng phun sơn</a>
+                                        <!-- <ul class="sub-menu">
+                                            <li>Súng phun sơn cầm tay</li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul> -->
+                                    </li>
+                                    <li> <a href="" class="dropdown-item" >Bơm sơn</a></li>
+                                    <li> <a href="" class="dropdown-item" >Tank sơn / nồi trộn</a></li>
+                                    <li> <a href="" class="dropdown-item" >Phụ kiện</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dụng cụ cầm tay</a>
+                                <ul class="dropdow-menu" aria-labelledby="dropdownMenuLink">
+                                    <li> <a href="" class="dropdown-item" >Tô vít</a></li>
+                                    <li> <a href="" class="dropdown-item" >Bút thử điện</a></li>
+                                    <li> <a href="" class="dropdown-item" >Kìm</a></li>
+                                    <li> <a href="" class="dropdown-item" >Bộ dụng cụ</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
                 <div class="header-middle">
-                    <span><marquee>Chào mừng bạn đến với HaluTool ! Châm ngôn của chúng tôi là "Chất lượng hàng đầu, khách hàng trên hết, cải tiến liên tục.</marquee></span>
+                    <span>
+                        <marquee>Chào mừng bạn đến với HaluTool ! Châm ngôn của chúng tôi là "Chất lượng hàng đầu, khách
+                            hàng trên hết, cải tiến liên tục.</marquee>
+                    </span>
                     <form action="" class="search-box">
                         <input type="text" name="" value="" placeholder="Bạn muốn mua gì?">
-                        <button class="search-button" type="button" name="Tìm Kiếm" >
-                                <i class="fa fa-search" aria-hidden="true"></i>
+                        <button class="search-button" type="button" name="Tìm Kiếm">
+                            <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
                     </form>
                 </div>
-                <div class="right">
-                    <div><a href=""><img src="../asset/shopping-cart (2).png" alt=""></a></div>
-                    <div><a href="" >Đăng nhập</a></div>
-                    <div><i>&</i></div>
+                <div class="h-right">
+                    <i class='fas fa-shopping-cart'></i>
+                    <i class="fa-regular fa-user"></i>
+                    <div><a href="">Đăng nhập</a></div>
+                    <div></div>
                     <div><a href="">Đăng kí</a></div>
                 </div>
-                </header>
+            </header>
+        </div>
+   
+    <div class="main">
+        <div class="main-left">
+            <ul>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ul>
+        </div>
+        <div class="middle-main">
+            <div class="slider">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../asset/slider_1.webp" class="d-block w-70" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../asset/slider_2.webp" class="d-block w-70" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-        <div class="right-wrapper"></div>
+            <div class="wrap-item">
+                <table style="border: 1;">
+                    <tr>
+                        <div class="item">
+                            <td><img src="//bizweb.dktcdn.net/100/365/442/themes/737549/assets/image-shipping1.png?1664720334923"
+                                    alt="images"></td>
+                            <td class="item-text">VẬN CHUYỂN TOÀN QUỐC</td>
+                        </div>
+                        <div class="item">
+                            <td><img src="//bizweb.dktcdn.net/100/365/442/themes/737549/assets/image-shipping2.png?1664720334923"
+                                    alt="images"></td>
+                            <td class="item-text">HỖ TRỢ 24/7, GỌI BẤT CỨ LÚC NÀO</td>
+                        </div>
+                        <div class="item">
+                            <td class="item"><img
+                                    src="//bizweb.dktcdn.net/100/365/442/themes/737549/assets/image-shipping3.png?1664720334923"
+                                    alt="images"></td>
+                            <td class="item-text">CAM KẾT CHÍNH HÃNG, THANH TOÁN AN TOÀN</td>
+                        </div>
+                        <div class="item">
+                            <td><img src="//bizweb.dktcdn.net/100/365/442/themes/737549/assets/image-shipping4.png?1664720334923"
+                                    alt="images"></td>
+                            <td class="item-text">ƯU ĐÃI HẤP DẪN, GIẢM ĐẾN 60%</td>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+            <div class="title-text">
+                <h2> <a href="" >SẢN PHẨM MỚI NHẤT</a></h2>
+            </div>
+            <div class="product">
+                <div class="box-product">
+                    <div class="product-item">
+                        <a href=""><img src="../asset/1451364213-may-khoan-tu-woj3200.webp" alt=""></a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="name-product">MÁY KHOAN TỪ NITTO WOJ-3200 </a>
+                        <p class="price-product">2.600.000</p>
+                    </div>
+                    <i class="fa-regular fa-eye"></i>
+                    <div class="product-action clearfix">
+                        <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-15911931" enctype="multipart/form-data">
+                            <input type="hidden" name="variantId" value="27933131">
+                            <button class="btn-buy btn-cart btn btn-gray left-to add_to_cart" title="Thêm vào giỏ hàng"><span>Thêm vào giỏ hàng</span>
+                            </button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
-   
+
 </html>
